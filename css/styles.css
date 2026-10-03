@@ -528,17 +528,50 @@ a:focus {
 }
 
 @media (max-width: 768px) {
+  /* 1. Tarjetas de contacto a una columna */
   .contact-skills-container {
     grid-template-columns: 1fr;
   }
+  
+  /* 2. Menú superior ajustado */
   .navbar {
     flex-direction: column;
-    padding: 16px;
+    padding: 10px;
   }
   .nav-links {
-    margin-top: 12px;
+    margin-top: 10px;
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
+  }
+  
+  /* 3. Arreglo del perfil en móvil (Adiós aplastamiento) */
+  .profile-row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .profile__avatar {
+    width: 130px;
+    height: 130px;
+    margin: 0 auto 15px auto;
+  }
+  
+  /* 4. Centrar redes sociales y botón del CV */
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin: 15px 0;
+  }
+  .btn-cv {
+    margin: 10px auto; 
+  }
+  
+  /* 5. Reducir el tamaño del título en móvil */
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
   }
 }
 
