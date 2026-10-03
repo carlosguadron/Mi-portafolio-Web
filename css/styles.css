@@ -601,21 +601,73 @@ a:focus {
 }
 
 /* ===========================
-   BANNER DE INICIO
+   BANNER Y PERFIL (ESTILO LINKEDIN)
    =========================== */
 .profile-banner {
   width: 100%;
   height: 220px;
   object-fit: cover;
-  border-radius: 8px;
-  margin-bottom: 24px;
   display: block;
+  border-radius: 10px 10px 0 0; /* Solo redondea las esquinas superiores */
 }
 
-/* Ajuste exclusivo para que se vea bien en el móvil */
+.profile-content-wrapper {
+  padding: 0 24px 24px 24px;
+}
+
+/* Fila principal que empuja la foto hacia arriba */
+.profile-row-linkedin {
+  display: flex;
+  gap: 20px;
+  align-items: flex-end;
+  margin-top: -60px; /* Aquí está la magia: sube la foto pisando el banner */
+  margin-bottom: 20px;
+  position: relative;
+}
+
+/* Tu foto estilo LinkedIn (Redonda y con borde) */
+.profile__avatar-linkedin {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid var(--card); /* Crea el marco invisible alrededor */
+  background-color: var(--card);
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.profile__bio-linkedin {
+  flex: 1;
+  padding-bottom: 10px;
+}
+
+.profile__bio-linkedin h1 {
+  margin-bottom: 4px;
+  font-size: 2.2rem;
+}
+
+.profile-action-btn {
+  padding-bottom: 10px;
+}
+
+/* Adaptación perfecta para móviles */
 @media (max-width: 768px) {
   .profile-banner {
     height: 120px;
-    margin-bottom: 16px;
+  }
+  .profile-row-linkedin {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: -55px;
+    gap: 12px;
+  }
+  .profile__avatar-linkedin {
+    width: 110px;
+    height: 110px;
+  }
+  .profile__bio-linkedin {
+    padding-bottom: 0;
   }
 }

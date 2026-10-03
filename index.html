@@ -27,47 +27,48 @@
     </nav>
   </header>
 
-  <!-- ===========================
-       SECCIONES DE CONTENIDO
+  <!-- Inicio -->
+<!-- ===========================
+       INICIO 
        =========================== -->
-
-  <!-- Inicio -->
-  <!-- Inicio -->
-  <section id="inicio" class="section content card" aria-labelledby="titulo-perfil">
+  <section id="inicio" class="section content card" style="padding: 0; overflow: hidden;">
     
-    <!-- BANNER -->
-    <img src="img/banner-pagina-web.jpg" alt="Banner Portafolio Carlos" class="profile-banner">
+    <!-- Banner superior -->
+    <img src="img/banner-pagina-web.jpg" alt="Banner Portafolio" class="profile-banner">
 
-    <h1 id="titulo-perfil">Bienvenido a mi portafolio 🚀</h1>
-
-    <!-- Perfil compacto -->
-    <div class="profile-row">
-      <img src="img/yo.jpg" alt="Foto de Carlos" class="profile__avatar">
-      <div class="profile__bio">
-        <p>Hola, soy Carlos. Desarrollador de videojuegos y artista 3D en formación.</p>
-        <div class="social">
-          <a href="https://www.instagram.com/3__carlos__0/" target="_blank" rel="noopener noreferrer">Instagram</a>
-          <a href="https://github.com/carlosguadron" target="_blank" rel="noopener noreferrer">GitHub</a>
-          <a href="https://www.linkedin.com/in/carlos-cristian-guadr%C3%B3n-mendoza-684215248/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+    <!-- Contenedor inferior (textos y foto) -->
+    <div class="profile-content-wrapper">
+      
+      <!-- Fila superpuesta: Foto, textos y botón -->
+      <div class="profile-row-linkedin">
+        <img src="img/yo.jpg" alt="Foto de Carlos" class="profile__avatar-linkedin">
+        
+        <div class="profile__bio-linkedin">
+          <h1 id="titulo-perfil">Carlos Guadrón</h1>
+          <p>Desarrollador de videojuegos y artista 3D en formación.</p>
+          
+          <div class="social" style="margin-top: 12px;">
+            <a href="https://www.instagram.com/3__carlos__0/" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://github.com/carlosguadron" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="https://www.linkedin.com/in/carlos-cristian-guadr%C3%B3n-mendoza-684215248/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
         </div>
         
-        <!-- 👇 NUEVO BOTÓN DE CV 👇 -->
-        <a href="docs/CV_Carlos.pdf" download="CV_Carlos_Guadron.pdf" class="btn-cv">
-          📄 Descargar mi CV
-        </a>
-
+        <div class="profile-action-btn">
+          <a href="docs/CV_Carlos.pdf" download="CV_Carlos_Guadron.pdf" class="btn-cv">📄 Descargar CV</a>
+        </div>
       </div>
-    </div>
 
-    <!-- Intereses -->
-    <section class="interests" id="intereses">
-      <h2>Mis intereses</h2>
-      <ul class="chips">
-        <li>Modelado 3D</li>
-        <li>Programación (C# / Blueprints)</li>
-        <li>Motor / Coches</li>
-      </ul>
-    </section>
+      <!-- Intereses -->
+      <section class="interests" id="intereses">
+        <ul class="chips" style="margin-top: 10px;">
+          <li>Modelado 3D</li>
+          <li>Programación (C# / Blueprints)</li>
+          <li>Motor / Coches</li>
+        </ul>
+      </section>
+      
+    </div>
   </section>
 
   <!-- Sobre mí -->
