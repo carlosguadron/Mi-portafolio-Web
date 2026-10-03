@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>La torre del silencio — Proyecto</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR (Igual que el principal, pero el logo vuelve al inicio) -->
+  <header class="site-header scrolled">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="index.html">Carlos G.</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#proyectos">Volver a Proyectos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CABECERA DEL PROYECTO -->
+  <section class="section project-hero">
+    <h1>La torre del silencio 🌲🔍</h1>
+    
+    <!-- Corregido: Se usa <ul> en lugar de <div> para que los <li> sean válidos -->
+    <ul class="chips center-chips">
+      <li>Unity</li>
+      <li>C#</li>
+      <li>Blender</li>
+    </ul>
+  </section>
+
+  <!-- CONTENIDO DEL PROYECTO -->
+  <main class="container project-details">
+    <div class="card">
+      <img src="img/La-torre-del-silencio.png" alt="Portada del juego" class="detail-image">
+      
+      <div class="detail-content">
+        <h2>El Concepto</h2>
+        <p>En este proyecto asumí el rol de desarrollador principal. El juego consiste en investigar el asesinato de un guardabosques en un entorno denso y oscuro. Mi objetivo principal fue crear una atmósfera de misterio y tensión constante a través del diseño de niveles y la narrativa ambiental.</p>
+        
+        <h2>Mi Rol y Retos</h2>
+        <p>Me encargué de programar las mecánicas de investigación, las físicas del jugador y la interacción con objetos mediante C#. Uno de los mayores retos técnicos fue optimizar la iluminación volumétrica en Unity para que el bosque se viera oscuro y opresivo, pero sin perjudicar el rendimiento del juego.</p>
+
+        <!-- NUEVA SECCIÓN: Galería para usar tu Lightbox -->
+        <h2>Galería de Imágenes</h2>
+        <p>Haz clic en las imágenes para ampliarlas:</p>
+        <div class="projects-grid" style="margin-top: 15px; margin-bottom: 30px;">
+          <!-- Nota: Cambia "img/torre2.png" por los nombres reales de tus capturas -->
+          <img src="img/La-torre-del-silencio.png" alt="Pantalla de título" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          <img src="img/La-torre-del-silencio1.png" alt="Mecánicas de investigación" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          <img src="img/La-torre-del-silencio2.png" alt="Escenario del bosque" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          <img src="img/La-torre-del-silencio3.png" alt="Mecánicas de investigación" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          <img src="img/La-torre-del-silencio4.png" alt="Mecánicas de investigación" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          <img src="img/La-torre-del-silencio5.png" alt="Mecánicas de investigación" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          <img src="img/La-torre-del-silencio6.png" alt="Mecánicas de investigación" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          <img src="img/La-torre-del-silencio7.png" alt="Mecánicas de investigación" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          
+        </div>
+
+        <!-- Aquí podrías incrustar un video de YouTube mostrando el gameplay -->
+        <h2>Gameplay</h2>
+        <div class="video-container">
+          <!-- Ejemplo de código iframe para cuando subas el vídeo a YouTube -->
+          <!-- <iframe width="100%" height="400" src="https://www.youtube.com/embed/TU_CODIGO_DE_VIDEO" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+          <p><em>(Sube un vídeo corto de tu gameplay a YouTube, dale a "Compartir > Insertar" y pega aquí el código del iframe)</em></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <strong>Carlos Guadrón</strong> — Portafolio Profesional</p>
+    </div>
+  </footer>
+
+  <!-- EL LIGHTBOX OCULTO POR DEFECTO -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <button class="prev-btn">&#10094;</button>
+    <img class="lightbox-content" id="lightbox-img">
+    <button class="next-btn">&#10095;</button>
+    <div id="caption"></div>
+  </div>
+
+  <!-- Añade el enlace a tu script (¡Importante!) -->
+  <script src="js/script.js"></script>
+</body>
+</html>

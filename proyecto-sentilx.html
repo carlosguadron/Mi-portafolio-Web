@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sentinel X — Proyecto</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header scrolled">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="index.html">Carlos G.</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#proyectos">Volver a Proyectos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CABECERA DEL PROYECTO -->
+  <section class="section project-hero">
+    <h1>SENTINEL X 🦠</h1>
+    
+    <ul class="chips center-chips">
+      <li>Unreal Engine 5</li>
+      <li>Blueprints</li>
+    </ul>
+  </section>
+
+  <!-- CONTENIDO DEL PROYECTO -->
+  <main class="container project-details">
+    <div class="card">
+      <img src="img/SentinelX.png" alt="Portada de Sentinel X" class="detail-image">
+      
+      <div class="detail-content">
+        <h2>El Concepto</h2>
+        <p>En este proyecto desarrollé un prototipo (vertical slice) de un juego 3D con temática de antivirus. Además del desarrollo técnico, me encargué de la fase de preproducción, redactando un Game Design Document (GDD) de 15 páginas para estructurar claramente todas las mecánicas y el flujo del juego antes de pasar al motor.</p>
+        
+        <h2>Mi Rol y Retos</h2>
+        <p>Me encargué de programar las mecánicas de puzzles y el sistema de juego utilizando Blueprints en Unreal Engine 5. Uno de los mayores retos técnicos y visuales de este proyecto fue la creación e implementación de materiales de postprocesado (shaders) personalizados para simular un escáner dentro del entorno digital del juego.</p>
+
+        <!-- Galería de imágenes lista para el Lightbox -->
+        <h2>Galería de Imágenes</h2>
+        <p>Haz clic en las imágenes para ampliarlas:</p>
+        <div class="projects-grid" style="margin-top: 15px; margin-bottom: 30px;">
+          <img src="img/SentinelX1.png" alt="Gameplay de Sentinel X 1" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          <img src="img/SentinelX5.png" alt="Escáner y Shaders" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          <img src="img/SentinelX7.png" alt="Puzzles y Entorno" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          <img src="img/SentinelX9.png" alt="Mecánicas de Sentinel X" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <strong>Carlos Guadrón</strong> — Portafolio Profesional</p>
+    </div>
+  </footer>
+
+  <!-- EL LIGHTBOX OCULTO POR DEFECTO -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <button class="prev-btn">&#10094;</button>
+    <img class="lightbox-content" id="lightbox-img">
+    <button class="next-btn">&#10095;</button>
+    <div id="caption"></div>
+  </div>
+
+  <!-- Añade el enlace a tu script (¡Importante!) -->
+  <script src="js/script.js"></script>
+</body>
+</html>

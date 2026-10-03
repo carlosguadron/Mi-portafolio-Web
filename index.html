@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Carlos Guadrón — Portafolio</title>
+
+  <!-- Enlace al CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ===========================
+       🧭 MENÚ DE NAVEGACIÓN FIJO
+       =========================== -->
+  <header class="site-header">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="#inicio">Carlos G.</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#sobre-mi">Sobre mí</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- ===========================
+       SECCIONES DE CONTENIDO
+       =========================== -->
+
+  <!-- Inicio -->
+  <section id="inicio" class="section content card" aria-labelledby="titulo-perfil">
+    <h1 id="titulo-perfil">Bienvenido a mi portafolio 🚀</h1>
+
+    <!-- Perfil compacto -->
+    <div class="profile-row">
+      <img src="img/yo.jpg" alt="Foto de Carlos" class="profile__avatar">
+      <div class="profile__bio">
+        <p>Hola, soy Carlos. Desarrollador de videojuegos y artista 3D en formación.</p>
+        <div class="social">
+          <a href="https://www.instagram.com/3__carlos__0/" target="_blank" rel="noopener noreferrer">Instagram</a>
+          <a href="https://github.com/carlosguadron" target="_blank" rel="noopener noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/in/carlos-cristian-guadr%C3%B3n-mendoza-684215248/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+        
+        <!-- 👇 NUEVO BOTÓN DE CV 👇 -->
+        <a href="docs/CV_Carlos.pdf" download="CV_Carlos_Guadron.pdf" class="btn-cv">
+          📄 Descargar mi CV
+        </a>
+
+      </div>
+    </div>
+
+    <!-- Intereses -->
+    <section class="interests" id="intereses">
+      <h2>Mis intereses</h2>
+      <ul class="chips">
+        <li>Modelado 3D</li>
+        <li>Programación (C# / Blueprints)</li>
+        <li>Motor / Coches</li>
+      </ul>
+    </section>
+  </section>
+
+  <!-- Sobre mí -->
+  <section id="sobre-mi" class="section">
+    <h2>Sobre mí</h2>
+    <p>Soy estudiante de 4to año del grado de Creación de Videojuegos y Animación Digital en la Universidad Loyola. Me apasiona combinar la lógica de la programación con la creatividad del diseño de entornos 3D. Trabajo principalmente con Unreal Engine 5, Unity y Blender, buscando siempre optimizar mecánicas y crear experiencias visuales inmersivas.</p>
+  </section>
+
+  <!-- Proyectos -->
+  <section id="proyectos" class="projects-section container" aria-labelledby="titulo-proyectos">
+    <h2 id="titulo-proyectos">Mis Proyectos 🚀</h2>
+    <p>Aquí encontrarás algunos de los trabajos, prototipos y modelados que he desarrollado durante mi carrera.</p>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="programacion">Programación</button>
+      <button class="filter-btn" data-filter="modelado">Modelado 3D</button>
+      <button class="filter-btn" data-filter="juegos">Videojuegos</button>
+    </div>
+
+    <!-- Contenedor de tarjetas de proyectos -->
+    <div class="projects-grid">
+      
+      <!-- Proyecto 1 -->
+      <article class="project-card reveal reveal-bottom" data-category="juegos programacion" onclick="window.location.href='proyecto-torre.html';">
+        <span class="badge wip">Completado</span>
+        <img src="img/La-torre-del-silencio.png" alt="Vista previa de La Torre del Silencio" class="project-image">
+        <h3>La torre del silencio</h3>
+        <p>Videojuego de misterio donde asumes el rol de un investigador intentando resolver el asesinato de un guardabosques.</p>
+        <span class="project-link">Ver proyecto completo</span>
+      </article>
+
+      <!-- Proyecto 2 -->
+      <article class="project-card reveal reveal-left" data-category="programacion juegos" onclick="window.location.href='proyecto-sentilx.html';">
+        <span class="badge wip">Completado</span>
+        <img src="img/SentinelX.png" alt="Vista previa de Sentinel X" class="project-image">
+        <h3>SENTINEL X</h3>
+        <p>Prototipo vertical de un juego 3D con temática de antivirus creado en Unreal Engine 5. Incluye mecánicas de puzzles y shaders de postprocesado.</p>
+        <span class="project-link">Ver proyecto completo</span>
+      </article>
+
+      <!-- Proyecto 3-->
+      <article class="project-card reveal reveal-left" data-category="programacion juegos" onclick="window.location.href='proyecto-POTI.html';">
+        <span class="badge wip">En Desarrollo</span>
+        <img src="img/Plague-of-the-inquisition.png" alt="Vista previa de The Unfinished Case" class="project-image">
+        <h3>Plague of The Inquisition</h3>
+        <p>Videojuego de aventura y sigilo ambientado en la Sevilla del siglo XVI durante la peste negra y la Inquisición. Prototipado y desarrollado en equipo utilizando Unreal Engine 5.</p>
+        <span class="project-link">Ver proyecto completo</span>
+      </article>
+
+      <!-- Proyecto 4-->
+      <article class="project-card reveal reveal-left" data-category="programacion juegos" onclick="window.location.href='proyecto-TheUnfinishedCase.html';">
+        <span class="badge wip">En Desarrollo</span>
+        <img src="img/The-Unfinished-Case.png" alt="Vista previa de The Unfinished Case" class="project-image">
+        <h3>The Unfinished Case</h3>
+        <p>Videojuego de suspenso en el cual asumes el rol de un detective que debe investigar el asesinato de un famoso pianista.</p>
+        <span class="project-link">Ver proyecto completo</span>
+      </article>
+
+      <!-- Proyecto 5 -->
+      <article class="project-card reveal reveal-left" data-category="modelado" onclick="window.location.href='proyecto-Giralda.html';">
+        <span class="badge wip">Completado</span>
+        <img src="img/Giralda2.png" alt="Vista previa de La Giralda 3D" class="project-image">
+        <h3>Giralda 3D</h3>
+        <p>Modelado 3D de La Giralda basado en la arquitectura de la Sevilla del siglo XVI. Topología optimizada en Blender para su uso en videojuegos de mundo semi-abierto.</p>
+        <span class="project-link">Ver proyecto completo</span>
+      </article>
+
+      <!-- Proyecto 6 -->
+      <article class="project-card reveal reveal-left" data-category="modelado" onclick="window.location.href='proyecto-CatedralSevilla.html';">        
+        <span class="badge wip">En Desarrollo</span>
+        <img src="img/Catedral-de-Sevilla.png" alt="Vista previa de La Giralda 3D" class="project-image">
+        <h3>Catedral de Sevilla</h3>
+        <p>Recreación arquitectónica en 3D de la Catedral de Sevilla, modelada en Blender. Diseñada con rigor histórico y optimizada para integrarse como entorno jugable.</p>
+        <span class="project-link">Ver proyecto completo</span>
+      </article>
+      
+
+    </div> <!-- Cierre correcto del projects-grid -->
+  </section>
+
+  <!-- ===========================
+       SECCIÓN DE HABILIDADES Y CONTACTO
+       =========================== -->
+  <section id="contacto" class="section" aria-labelledby="titulo-contacto">
+    
+    <div class="contact-skills-container">
+      
+      <!-- Tarjeta de Habilidades -->
+      <div class="card skills-card reveal reveal-left">
+        <h3 id="titulo-habilidades">Mis Habilidades 🛠️</h3>
+        <p>Herramientas y tecnologías que utilizo para crear:</p>
+        
+        <ul class="skills-grid">
+          <li><span class="skill-icon">🔥</span> Unreal Engine 5</li>
+          <li><span class="skill-icon">🎮</span> Unity (C#)</li>
+          <li><span class="skill-icon">🧊</span> Blender</li>
+          <li><span class="skill-icon">🐙</span> GitHub / Git</li>
+          <li><span class="skill-icon">💻</span> HTML & CSS</li>
+          <li><span class="skill-icon">⚡</span> JavaScript</li>
+        </ul>
+      </div>
+
+      <!-- Tarjeta de Contacto -->
+      <div class="card contact-card reveal reveal-right">
+        <h3 id="titulo-contacto">Hablemos 📩</h3>
+        <p>¿Tienes un proyecto en mente o quieres conectar? ¡Escríbeme!</p>
+        
+        <div class="contact-links">
+          <!-- Botón Email -->
+          <a href="mailto:c1205333@gmail.com" class="contact-btn">
+            <span class="icon">✉️</span> c1205333@gmail.com
+          </a>
+          <!-- Botón LinkedIn -->
+          <a href="https://www.linkedin.com/in/carlos-cristian-guadr%C3%B3n-mendoza-684215248/" target="_blank" rel="noopener noreferrer" class="contact-btn">
+            <span class="icon">💼</span> LinkedIn
+          </a>
+          <!-- Botón GitHub -->
+          <a href="https://github.com/carlosguadron" target="_blank" rel="noopener noreferrer" class="contact-btn">
+            <span class="icon">🐙</span> GitHub
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <strong>Carlos Guadrón</strong> — Portafolio Profesional</p>
+    </div>
+  </footer>
+
+  <!-- Script principal -->
+  <script src="js/script.js"></script>
+</body>
+</html>

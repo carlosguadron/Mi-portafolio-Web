@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Unfinished Case — Proyecto</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <header class="site-header scrolled">
+    <nav class="navbar">
+      <div class="nav-logo">
+        <a href="index.html">Carlos G.</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="index.html#proyectos">Volver a Proyectos</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- CABECERA DEL PROYECTO -->
+  <section class="section project-hero">
+    <h1>The Unfinished Case 🕵️‍♂️🎹</h1>
+    
+    <ul class="chips center-chips">
+      <li>Unity</li>
+      <li>C#</li>
+      <li>Blender</li>
+    </ul>
+  </section>
+
+  <!-- CONTENIDO DEL PROYECTO -->
+  <main class="container project-details">
+    <div class="card">
+      <!-- Corregido el cierre de comillas y etiqueta -->
+      <img src="img/The-Unfinished-Case.png" alt="Portada del juego" class="detail-image">
+
+      <div class="detail-content">
+        <h2>El Concepto</h2>
+        <p>En este proyecto asumí el rol de desarrollador principal. El juego es un thriller de suspenso donde asumes el rol de un detective encargado de investigar el misterioso asesinato de un famoso pianista. Mi objetivo fue crear una atmósfera intrigante enfocada en la exploración y la resolución de puzzles.</p>
+        
+        <h2>Mi Rol y Retos</h2>
+        <p>Me encargué de programar las mecánicas de investigación, la recolección de pistas y las físicas del jugador mediante C#. Uno de los mayores retos fue diseñar un sistema de inventario y deducción que resultara intuitivo para el jugador y que mantuviera el ritmo de tensión durante la partida.</p>
+
+        <!-- Galería de Imágenes Corregida -->
+        <h2>Galería de Imágenes</h2>
+        <p>Haz clic en las imágenes para ampliarlas:</p>
+        <div class="projects-grid" style="margin-top: 15px; margin-bottom: 30px;">
+          <!-- Corregidas todas las comillas de las rutas de imágenes -->
+          <img src="img/The-Unfinished-Case.png" alt="Pantalla de título" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          <img src="img/The-Unfinished-Case2.png" alt="Escenario del caso" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          <img src="img/The-Unfinished-Case3.png" alt="Mecánicas de investigación" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          <img src="img/The-Unfinished-Case4.png" alt="Mecánicas de investigación" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          <img src="img/The-Unfinished-Case5.png" alt="Mecánicas de investigación" class="detail-image lightbox-trigger" style="height: 120px; cursor: pointer;">
+          
+        </div>
+
+        <!-- Gameplay -->
+        <h2>Gameplay</h2>
+        <div class="video-container">
+          <p><em>(Sube un vídeo corto de tu gameplay a YouTube, dale a "Compartir > Insertar" y pega aquí el código del iframe)</em></p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <strong>Carlos Guadrón</strong> — Portafolio Profesional</p>
+    </div>
+  </footer>
+
+  <!-- EL LIGHTBOX OCULTO POR DEFECTO -->
+  <div id="lightbox" class="lightbox">
+    <span class="close-lightbox">&times;</span>
+    <button class="prev-btn">&#10094;</button>
+    <img class="lightbox-content" id="lightbox-img">
+    <button class="next-btn">&#10095;</button>
+    <div id="caption"></div>
+  </div>
+
+  <!-- Añade el enlace a tu script -->
+  <script src="js/script.js"></script>
+</body>
+</html>
